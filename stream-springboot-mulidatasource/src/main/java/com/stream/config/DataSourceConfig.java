@@ -1,4 +1,4 @@
-package com.stream.springboot.mulidatasource.streamspringbootmulidatasource.config;
+package com.stream.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
@@ -22,7 +22,7 @@ public class DataSourceConfig {
     @Bean(name = "secondaryDataSource")
     @Qualifier("secondaryDataSource")
     @Primary
-    @ConfigurationProperties(prefix = "spring.datasource.primary")
+    @ConfigurationProperties(prefix = "spring.datasource.secondary")
     public DataSource secondaryDataSource(){
         return DataSourceBuilder.create().build();
     }

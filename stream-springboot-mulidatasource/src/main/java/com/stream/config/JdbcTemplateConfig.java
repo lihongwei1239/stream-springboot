@@ -1,4 +1,4 @@
-package com.stream.springboot.mulidatasource.streamspringbootmulidatasource.config;
+package com.stream.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -21,6 +21,5 @@ public class JdbcTemplateConfig {
             @Qualifier("secondaryDataSource") DataSource dataSource) {
         return new JdbcTemplate(dataSource);
     }
-
 
 }

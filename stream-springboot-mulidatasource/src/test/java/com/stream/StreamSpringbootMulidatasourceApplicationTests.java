@@ -1,4 +1,4 @@
-package com.stream.springboot.mulidatasource.streamspringbootmulidatasource;
+package com.stream;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
