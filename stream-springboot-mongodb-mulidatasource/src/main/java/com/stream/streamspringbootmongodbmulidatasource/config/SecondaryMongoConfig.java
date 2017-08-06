@@ -4,12 +4,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(
-        basePackages = "com.stream.streamspringbootmongodbmulidatasource.domain.repository.primary",
-        mongoTemplateRef = PrimaryMongoConfig.MONGO_TEMPLATE
-        )
-public class PrimaryMongoConfig {
+@EnableMongoRepositories(basePackages = "com.stream.streamspringbootmongodbmulidatasource.domain.repository.secondary",
+        mongoTemplateRef = SecondaryMongoConfig.MONGO_TEMPLATE)
+public class SecondaryMongoConfig {
 
-    protected static final String MONGO_TEMPLATE = "primaryMongoTemplate";
-
+    protected static final String MONGO_TEMPLATE = "secondaryMongoTemplate";
 }

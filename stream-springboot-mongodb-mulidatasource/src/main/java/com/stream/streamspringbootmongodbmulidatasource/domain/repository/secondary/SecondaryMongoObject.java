@@ -1,4 +1,4 @@
-package com.stream.streamspringbootmongodbmulidatasource.domain.repository.primary;
+package com.stream.streamspringbootmongodbmulidatasource.domain.repository.secondary;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "first_mongo")
-public class PrimaryMongoObject {
+public class SecondaryMongoObject {
 
     @Id
     private String id;

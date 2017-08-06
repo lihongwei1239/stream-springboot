@@ -1,6 +1,6 @@
-package com.stream.streamspringbootmongodbmulidatasource.domain.repository.primary;
+package com.stream.streamspringbootmongodbmulidatasource.domain.repository.secondary;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface PrimaryRepository extends MongoRepository<PrimaryMongoObject, String> {
+public interface SecondaryRepository extends MongoRepository<SecondaryMongoObject, String> {
 }
