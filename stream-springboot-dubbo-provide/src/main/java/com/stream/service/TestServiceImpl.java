@@ -1,9 +1,10 @@
 package com.stream.service;
 
-import org.springframework.stereotype.Service;
 
+import com.alibaba.dubbo.config.annotation.Service;
 
-@Service("testService")
+//@Service("testService")
+@Service(version = "1.0.0")
 public class TestServiceImpl implements ITestService {
 
     @Override
